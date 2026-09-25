@@ -8,7 +8,7 @@ public class ClientSocket1 {
 
     public static void main(String[] args) throws Exception{
         // TODO Auto-generated method stub
-        Socket socket = new Socket("localHost",8181);
+        Socket socket = new Socket("localHost",8182);
 
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(
