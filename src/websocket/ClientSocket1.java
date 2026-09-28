@@ -1,3 +1,5 @@
+package websocket;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ClientSocket2 {
+public class ClientSocket1 {
 
     public static void main(String[] args) throws Exception{
         // TODO Auto-generated method stub
@@ -19,7 +21,7 @@ public class ClientSocket2 {
             String line;
             try {
                 while ((line = in.readLine()) != null) {
-                    System.out.println("\n[2.client :] " + line);
+                    System.out.println("\n[1.client :] " + line);
                 }
             } catch (IOException e) {
                 System.err.println("연결 종료: " + e.getMessage());
