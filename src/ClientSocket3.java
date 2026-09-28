@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ClientSocket1 {
+public class ClientSocket3 {
 
     public static void main(String[] args) throws Exception{
         // TODO Auto-generated method stub
@@ -19,7 +19,7 @@ public class ClientSocket1 {
             String line;
             try {
                 while ((line = in.readLine()) != null) {
-                    System.out.println("\n[1.client :] " + line);
+                    System.out.println("\n[3.client :] " + line);
                 }
             } catch (IOException e) {
                 System.err.println("연결 종료: " + e.getMessage());
@@ -28,7 +28,7 @@ public class ClientSocket1 {
         receiver.start();
         Scanner sc = new Scanner(System.in);
         while(true) {
-            System.out.print("1. client :");
+            System.out.print("3. client :");
             String clientmsg = sc.next();
             out.println(clientmsg);
 
